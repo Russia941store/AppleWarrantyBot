@@ -1,5 +1,5 @@
-#main.py
-import install_telegram  # временно ставим библиотеку через pip
+# main.py
+
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler
 from config import bot_token
 from handlers import start, handle_callback
@@ -15,6 +15,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-if __name__ == "__main__":
-    application.run_polling()
