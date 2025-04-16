@@ -8,7 +8,7 @@ def main():
     app = ApplicationBuilder().token(bot_token).build()
 
     app.add_handler(CommandHandler("start", start))
-    app.add_handler(CallbackQueryHandler(handle_callback))
+    app.add_handler(CallbackQueryHandler(handle_callback))  # Важно: без filters
 
     print("🤖 Бот запущен. Ожидаю команды в Telegram...")
     app.run_polling()
