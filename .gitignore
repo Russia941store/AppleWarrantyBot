@@ -1,12 +1,26 @@
+# Python
 __pycache__/
-.env
 *.pyc
 *.pyo
 *.pyd
-*.sqlite3
-*.db
-*.log
-.vscode/
+
+# Environments
+.env
+.env.*
 .venv/
 env/
+venv/
+
+# Database
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
 .idea/
+
+# macOS
+.DS_Store
